@@ -10,8 +10,7 @@ function secondLargest(numbers) {
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] == numbers[numbers.length - 1]) {
       continue;
-    }
-    if (numbers[i] > high2) {
+    } else if (numbers[i] > high2) {
       high2 = numbers[i];
     }
   }
