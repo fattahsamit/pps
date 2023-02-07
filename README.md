@@ -1,2 +1,5 @@
-# My HackerRank Progress
-Problem solving including C, Python
+# Programming and Problem Solving
+
+JavaScript
+C/C++
+Python
