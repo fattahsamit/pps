@@ -4,18 +4,25 @@ weight = float(input('Earth weight: '))
 planet_number = int(input('Planet number: '))
 
 if planet_number == 1:
-    print(weight*0.38)
+    destination_weight = weight*0.38
+    print(destination_weight)
 elif planet_number == 2:
-    print(weight*0.91)
+    destination_weight = weight*0.91
+    print(destination_weight)
 elif planet_number == 3:
-    print(weight*0.38)
+    destination_weight = weight*0.38
+    print(destination_weight)
 elif planet_number == 4:
-    print(weight*2.53)
+    destination_weight = weight*2.53
+    print(destination_weight)
 elif planet_number == 5:
-    print(weight*1.07)
+    destination_weight = weight*1.07
+    print(destination_weight)
 elif planet_number == 6:
-    print(weight*0.89)
+    destination_weight = weight*0.89
+    print(destination_weight)
 elif planet_number == 7:
-    print(weight*1.14)
+    destination_weight = weight*1.14
+    print(destination_weight)
 else:
     print('Invalid planet number')
