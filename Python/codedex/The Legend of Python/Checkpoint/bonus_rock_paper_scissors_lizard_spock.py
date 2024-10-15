@@ -45,59 +45,59 @@ if player == 1:
     if computer == 1:
         print('Draw')
     elif computer == 2:
-        print('The player lost, better luck next time!')
+        print('Paper covers Rock.\nThe player lost, better luck next time!')
     elif computer == 3:
-        print('The player won!')
+        print('Rock breaks Scissors.\nThe player won!')
     elif computer == 4:
-        print('The player won!')
+        print('Rock crushes Lizard.\nThe player won!')
     else:
-        print('The player lost, better luck next time!')
+        print('Spock vaporizes Rock.\nThe player lost, better luck next time!')
 # Scenario: Player chose ✋
 elif player == 2:
     if computer == 1:
-        print('The player won!')
+        print('Paper covers Rock.\nThe player won!')
     elif computer == 2:
         print('Draw')
     elif computer == 3:
-        print('The player lost, better luck next time!')
+        print('Scissors cut Paper.\nThe player lost, better luck next time!')
     elif computer == 4:
-        print('The player lost, better luck next time!')
+        print('Lizard eats Paper.\nThe player lost, better luck next time!')
     else:
-        print('The player won!')
+        print('Paper disproves Spock.\nThe player won!')
 # Scenario: Player chose ✌
 elif player == 3:
     if computer == 1:
-        print('The player lost, better luck next time!')
+        print('Rock breaks Scissors.\nThe player lost, better luck next time!')
     elif computer == 2:
-        print('The player won!')
+        print('Scissors cut Paper.\nThe player won!')
     elif computer == 3:
         print('Draw')
     elif computer == 4:
-        print('The player won!')
+        print('Scissors beat Lizard.\nThe player won!')
     else:
-        print('The player lost, better luck next time!')
+        print('Spock smashes Scissors.\nThe player lost, better luck next time!')
 # Scenario: Player chose 🦎
 elif player == 4:
     if computer == 1:
-        print('The player lost, better luck next time!')
+        print('Rock crushes Lizard.\nThe player lost, better luck next time!')
     elif computer == 2:
-        print('The player won!')
+        print('Lizard eats Paper.\nThe player won!')
     elif computer == 3:
-        print('The player lost, better luck next time!')
+        print('Scissors beat Lizard.\nThe player lost, better luck next time!')
     elif computer == 4:
         print('Draw')
     else:
-        print('The player won!')
+        print('Lizard poisons Spock.\nThe player won!')
 # Scenario: Player chose 🖖
 elif player == 5:
     if computer == 1:
-        print('The player won!')
+        print('Spock vaporizes Rock.\nThe player won!')
     elif computer == 2:
-        print('The player lost, better luck next time!')
+        print('Paper disproves Spock.\nThe player lost, better luck next time!')
     elif computer == 3:
-        print('The player won!')
+        print('Spock smashes Scissors.\nThe player won!')
     elif computer == 4:
-        print('The player lost, better luck next time!')
+        print('Lizard poisons Spock.\nThe player lost, better luck next time!')
     else:
         print('Draw')
 else:
