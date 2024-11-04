@@ -7,6 +7,7 @@ This repository contains resources and examples for various programming language
 - **Python**
 - **JavaScript**
 - **C**
+- **C#**
 - **SQL**
 
 ## Table of Contents
