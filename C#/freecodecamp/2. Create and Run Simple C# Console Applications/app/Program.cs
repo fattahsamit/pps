@@ -40,7 +40,12 @@ foreach (string name in studentNames)
         continue;
 
     int sumAssignmentScores = 0;
+    int sumAssignmentScoresWithExtraCredit = 0;
+    int extraCredit = 0;
+    
     decimal currentStudentGrade = 0;
+    decimal overallStudentGrade = 0;
+    decimal extraCreditValue = 0;
 
     int gradedAssignments = 0;
         
@@ -50,61 +55,66 @@ foreach (string name in studentNames)
         if (gradedAssignments <= examAssignments)
         {
             sumAssignmentScores += score;
+            sumAssignmentScoresWithExtraCredit += score;
         }
         else
         {
-            sumAssignmentScores += score / 10;
+            sumAssignmentScoresWithExtraCredit += score / 10;
+            extraCredit += score/10;
+
         }
 
     }
 
     currentStudentGrade = (decimal)sumAssignmentScores / examAssignments;
+    overallStudentGrade = (decimal)sumAssignmentScoresWithExtraCredit / examAssignments;
+    extraCreditValue = (decimal)extraCredit / examAssignments;
 
-    if (currentStudentGrade >= 97)
+    if (overallStudentGrade >= 97)
     {
         currentStudentLetterGrade = "A+";
     }
-    else if (currentStudentGrade >= 93)
+    else if (overallStudentGrade >= 93)
     {
         currentStudentLetterGrade = "A";
     }
-    else if (currentStudentGrade >= 90)
+    else if (overallStudentGrade >= 90)
     {
         currentStudentLetterGrade = "A-";
     }
-    else if (currentStudentGrade >= 87)
+    else if (overallStudentGrade >= 87)
     {
         currentStudentLetterGrade = "B+";
     }
-    else if (currentStudentGrade >= 83)
+    else if (overallStudentGrade >= 83)
     {
         currentStudentLetterGrade = "B";
     }
-    else if (currentStudentGrade >= 80)
+    else if (overallStudentGrade >= 80)
     {
         currentStudentLetterGrade = "B-";
     }
-    else if (currentStudentGrade >= 77)
+    else if (overallStudentGrade >= 77)
     {
         currentStudentLetterGrade = "C+";
     }
-    else if (currentStudentGrade >= 73)
+    else if (overallStudentGrade >= 73)
     {
         currentStudentLetterGrade = "C";
     }
-    else if (currentStudentGrade >= 70)
+    else if (overallStudentGrade >= 70)
     {
         currentStudentLetterGrade = "C-";
     }
-    else if (currentStudentGrade >= 67)
+    else if (overallStudentGrade >= 67)
     {
         currentStudentLetterGrade = "D+";
     }
-    else if (currentStudentGrade >= 63)
+    else if (overallStudentGrade >= 63)
     {
         currentStudentLetterGrade = "D";
     }
-    else if (currentStudentGrade >= 60)
+    else if (overallStudentGrade >= 60)
     {
         currentStudentLetterGrade = "D-";
     }
@@ -113,7 +123,7 @@ foreach (string name in studentNames)
         currentStudentLetterGrade = "F";
     }
 
-    Console.WriteLine($"{currentStudent}\t\t" + $"0\t\t" +  currentStudentGrade + $"\t{currentStudentLetterGrade}" + $"\t0 (0 pts)");
+    Console.WriteLine($"{currentStudent}\t\t" + $"{currentStudentGrade}\t\t" +  overallStudentGrade + $"\t{currentStudentLetterGrade}" + $"\t{(int)currentStudentGrade} ({extraCreditValue} pts)");
 }
 
 Console.WriteLine("Press the Enter key to continue");
